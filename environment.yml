@@ -1,0 +1,26 @@
+name: learningfrombrains
+channels:
+- anaconda
+- conda-forge
+- defaults
+dependencies:
+- einops=0.4.0
+- nibabel=3.2.2
+- nilearn=0.9.0
+- matplotlib=3.5.1
+- numpy=1.19.5
+- pandas=1.1.5
+- Pillow=9.0.1
+- pytest=7.0.1
+- seaborn=0.11.2
+- transformers=4.16.2
+- tqdm=4.62.3
+- wandb=0.12.10
+# install the following packages via pip because
+# they're not available (at least not by these names) on conda channels
+- pip:
+  - templateflow==0.7.2
+  - load-confounds==0.12.0
+  - webdataset==0.1.103
+  - torch==1.11
+  - torchviz==0.0.2
